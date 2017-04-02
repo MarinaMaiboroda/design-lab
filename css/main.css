@@ -1,0 +1,316 @@
+/* Basic styles */
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+
+*{
+    box-sizing: border-box;
+}
+
+html, 
+body{
+    background: #fff;
+    color: #3c3c3c;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.5;   
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a, button{
+    transition: all 0.5s ease;
+}
+
+p{
+    margin: 0;
+}
+
+/* p:not(:last-child){
+    margin-bottom: 30px;
+}  */
+
+/* Typography */
+
+
+/* Additional styles or modificators */
+.text-left{
+    text-align: left !important;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-right{
+    text-align: right;
+}
+
+/* Grid */
+.dl-container{
+    margin: auto;
+    padding: 0 15px;
+    width: 100%;
+    max-width: 930px;
+}
+
+.row{
+    margin: 0 -15px;
+}
+
+.row:before,
+.row:after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+[class^="col"],
+[class*="col"]{
+    float: left;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.col-1{
+    width: 8.3333%;
+}
+
+.col-2{
+    width: 16.6666%;
+}
+
+.col-3{
+    width: 25%;
+}
+
+.col-4{
+    width: 33.3333%;
+}
+
+.col-5{
+    width: 41.6665%;
+}
+
+.col-6{
+    width: 50%;
+}
+
+.col-7{
+    width: 58.3333%;
+}
+
+.col-8{
+    width: 66.6666%;
+}
+
+.col-9{
+    width: 75%;
+}
+
+.col-10{
+    width: 83.3333%;
+}
+
+.col-11{
+    width: 91.6666%
+}
+
+.col-12{
+    width: 100%;
+}
+
+.col-offset-1{
+    margin-left: 8.3333%;
+}
+
+.col-offset-2{
+    margin-left: 16.6666%;
+}
+
+.col-offset-3{
+    margin-left: 25%;
+}
+
+.col-offset-4{
+    margin-left: 33.3333%;
+}
+
+.col-offset-5{
+    margin-left: 41.6665%;
+}
+
+.col-offset-6{
+    margin-left: 50%;
+}
+
+.col-offset-7{
+    margin-left: 58.3333%;
+}
+
+.col-offset-8{
+    margin-left: 66.6666%;
+}
+
+.col-offset-9{
+    margin-left: 75%;
+}
+
+.col-offset-10{
+    margin-left: 83.3333%;
+}
+
+.col-offset-11{
+    margin-left: 91.6666%
+}
+
+/* Typography */
+.dl-container__title{
+    position: relative;
+    margin: 0 0 50px 0;
+    padding: 0 25%;
+    font-size: 34px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1;
+    letter-spacing: .16em;
+    transform: translateY(-50%); 
+}
+
+.dl-container__title:before,
+.dl-container__title:after{
+  position: absolute;
+  top: 50%;
+  width: 25%;
+  height: 2px;
+  margin-top: -1px;
+  content: '';
+  background: #3c3c3c;  
+}
+
+.dl-container__title:before{
+  left: 0;
+}
+
+.dl-container__title:after{
+  right:0; 
+}
+
+.title--white:before,
+.title--white:after{
+ content: '';
+ background: #fff;
+}
+
+.dl-container__text{
+    display: inline-block;
+    max-width: 67%;
+    margin: 0 0 30px 0;
+    font-size: 16px;
+    font-weight: 300;
+}  
+
+.dl-container__text:last-child{
+ margin-bottom: 0;
+}
+
+.text--margin-none{
+ margin-bottom:0;
+}
+
+.dl-text-block{
+  padding: 160px 0;
+}
+
+.dl-content{
+  padding-bottom: 30px;
+  border: 2px solid #3c3c3c;
+  border-top: 0;
+}  
+
+.content--border-white{
+ border-color: #fff;
+}
+
+.content--one-service-padding{
+ padding: 0 0 35px;
+}
+
+/* Header */
+.dl-header{
+    position: relative;
+    min-height: 100vh;
+    padding: 285px 0 390px; 
+    background: #abb5ca url('../img/hero-bg.jpg') no-repeat center center; 
+    background-size: cover;
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase; 
+    line-height: 2;
+}
+
+.dl-logo{
+    display: inline-block;
+    width: auto;
+    margin-bottom: 90px; 
+}
+
+.dl-header__content{
+    max-width: 67%;
+    margin: 0 auto;
+}
+
+.dl-header__name{
+    margin: 0 0 40px 0;
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.16em; 
+}
+
+.dl-header__next-link{
+    position: absolute;
+    left: 50%;
+    bottom: 115px;
+    display: block;
+    transform: translateX(-50%);  
+}
+
+.dl-header__next-link:hover{
+    opacity: 0.7;
+}
+
+/* About us */
+
+/* Service */
+.dl-service-block{
+ padding: 128px 0 109px;
+ color: #fff;
+ background: #aab4c9 url('../img/services.jpg') center center no-repeat;
+ background-size: cover;
+}
+
+/* What we do */
+.dl-one-service{
+ margin: 0 auto;
+ padding: 55px 0;
+ max-width: 67%;
+ font-weight: 300;
+}
+
+.dl-one-service__img{
+ display: inline-block;
+ margin: 0 0 30px;
+}
+
+.dl-one-service__title{
+ margin: 0 0 42px;
+ font-size: 20px;
+ font-weight: 700;
+ text-transform: uppercase;
+ line-height: 1;
+ letter-spacing: 0.16em;
+}
