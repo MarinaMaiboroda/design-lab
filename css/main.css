@@ -1,7 +1,7 @@
 /* Basic styles */
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
 
-*{
+*, *:before, *:after{
     box-sizing: border-box;
 }
 
@@ -28,6 +28,37 @@ a, button{
 p{
     margin: 0;
 }
+
+button,
+.btn{
+  display: block;
+  /* max-width: 50%; */
+  margin: 15px auto;
+  padding: 20px 15px;
+  background: #3c3c3c;
+  border: 1px solid #3c3c3c;
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  line-height:1;
+  outline: none;
+}
+
+button:hover,
+.btn:hover,
+button:focus,
+.btn:focus{
+  background: #fff;
+  color:#3c3c3c;
+}
+
+button:active,
+.btn:active{
+  background: #a09d9d;
+}
+
 
 /* p:not(:last-child){
     margin-bottom: 30px;
@@ -57,8 +88,18 @@ p{
     max-width: 930px;
 }
 
+.dl-full-container{
+  padding: 0 5px;
+  width: 100%;
+  /* box-sizing: border-box; */
+}
+
 .row{
     margin: 0 -15px;
+}
+
+.row--margin-5{
+  margin: 0 -5px;
 }
 
 .row:before,
@@ -205,6 +246,10 @@ p{
  background: #fff;
 }
 
+.title--margin-bottom{
+  margin-bottom: 60px;
+}
+
 .dl-container__text{
     display: inline-block;
     max-width: 67%;
@@ -294,6 +339,10 @@ p{
 }
 
 /* What we do */
+/* .dl-content div.dl-one-service:first-child{
+  padding-top: 75px;
+} */
+
 .dl-one-service{
  margin: 0 auto;
  padding: 55px 0;
@@ -313,4 +362,45 @@ p{
  text-transform: uppercase;
  line-height: 1;
  letter-spacing: 0.16em;
+}
+
+/* Gallery */
+.col-29{
+  width: 29%;
+  padding: 0 5px;
+}
+
+.col-42{
+  width: 42%;
+  padding: 0 5px;
+}
+
+.dl-gallery-elem{
+  position: relative;
+}
+
+.dl-gallery-elem__name{
+  position: absolute;
+  left: 43px;
+  bottom: 43px;
+  margin: 0;
+  color: #fff;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 1;
+}
+
+.dl-full-container .row + .row{
+  margin-top: 10px;
+}
+
+/* Contact us */
+.dl-contacts .btn{
+  max-width: 50%;
+  margin: 0 auto 20px;
+}
+
+/* Footer */
+footer{
+  padding: 65px 0 ;
 }
