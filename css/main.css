@@ -3,6 +3,8 @@
 
 *, *:before, *:after{
     box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
 }
 
 html, 
@@ -22,7 +24,11 @@ img{
 }
 
 a, button{
-    transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
 }
 
 p{
@@ -211,14 +217,18 @@ button:active,
 /* Typography */
 .dl-container__title{
     position: relative;
-    margin: 0 0 50px 0;
+    margin: 0 0 35px 0;
     padding: 0 25%;
     font-size: 34px;
     font-weight: 700;
     text-transform: uppercase;
     line-height: 1;
     letter-spacing: .16em;
-    transform: translateY(-50%); 
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%); 
+    -moz-transform: translateY(-50%); 
+    -o-transform: translateY(-50%);  
 }
 
 .dl-container__title:before,
@@ -253,7 +263,7 @@ button:active,
 .dl-container__text{
     display: inline-block;
     max-width: 67%;
-    margin: 0 0 30px 0;
+    margin: 0 0 24px 0;
     font-size: 16px;
     font-weight: 300;
 }  
@@ -267,11 +277,11 @@ button:active,
 }
 
 .dl-text-block{
-  padding: 160px 0;
+  padding: 161px 0 159px 0;
 }
 
 .dl-content{
-  padding-bottom: 30px;
+  padding-bottom: 24px;
   border: 2px solid #3c3c3c;
   border-top: 0;
 }  
@@ -288,7 +298,7 @@ button:active,
 .dl-header{
     position: relative;
     min-height: 100vh;
-    padding: 285px 0 390px; 
+    padding: 285px 0 387px; 
     background: #abb5ca url('../img/hero-bg.jpg') no-repeat center center; 
     background-size: cover;
     color: #fff;
@@ -300,7 +310,7 @@ button:active,
 .dl-logo{
     display: inline-block;
     width: auto;
-    margin-bottom: 90px; 
+    margin-bottom: 73px; 
 }
 
 .dl-header__content{
@@ -309,10 +319,10 @@ button:active,
 }
 
 .dl-header__name{
-    margin: 0 0 40px 0;
+    margin: 0 0 33px 0;
     font-size: 54px;
     font-weight: 700;
-    line-height: 1;
+    line-height: 1.15;
     letter-spacing: 0.16em; 
 }
 
@@ -403,4 +413,19 @@ button:active,
 /* Footer */
 footer{
   padding: 65px 0 ;
+}
+
+.display-table{
+  display: inline-table;
+  width: auto;
+}
+
+.display-table__cell{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.dl-logo-black{
+  max-width: 35px; 
+  margin-right: 36px; 
 }
